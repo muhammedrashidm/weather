@@ -32,6 +32,6 @@ class ForecastMainResponse {
     this.tempKf,
   });
 
-  factory ForecastMainResponse.fromJson(Map<String, dynamic> json) => _$ForecastMainResponseFromJson(json);
-
+  factory ForecastMainResponse.fromJson(Map<String, dynamic> json) =>
+      _$ForecastMainResponseFromJson(json);
 }

@@ -21,6 +21,7 @@ mixin _$WeatherEvent {
     required TResult Function() started,
     required TResult Function(double lat, double long) fetchWithCords,
     required TResult Function(double lat, double long) getForecastData,
+    required TResult Function() getCachedData,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -28,6 +29,7 @@ mixin _$WeatherEvent {
     TResult? Function()? started,
     TResult? Function(double lat, double long)? fetchWithCords,
     TResult? Function(double lat, double long)? getForecastData,
+    TResult? Function()? getCachedData,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -35,6 +37,7 @@ mixin _$WeatherEvent {
     TResult Function()? started,
     TResult Function(double lat, double long)? fetchWithCords,
     TResult Function(double lat, double long)? getForecastData,
+    TResult Function()? getCachedData,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -44,6 +47,7 @@ mixin _$WeatherEvent {
     required TResult Function(_WeatherEventFetchWithCord value) fetchWithCords,
     required TResult Function(_WeatherEventGetForecastData value)
         getForecastData,
+    required TResult Function(_WeatherEventGetCachedData value) getCachedData,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -51,6 +55,7 @@ mixin _$WeatherEvent {
     TResult? Function(_WeatherEventStarted value)? started,
     TResult? Function(_WeatherEventFetchWithCord value)? fetchWithCords,
     TResult? Function(_WeatherEventGetForecastData value)? getForecastData,
+    TResult? Function(_WeatherEventGetCachedData value)? getCachedData,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -58,6 +63,7 @@ mixin _$WeatherEvent {
     TResult Function(_WeatherEventStarted value)? started,
     TResult Function(_WeatherEventFetchWithCord value)? fetchWithCords,
     TResult Function(_WeatherEventGetForecastData value)? getForecastData,
+    TResult Function(_WeatherEventGetCachedData value)? getCachedData,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -123,6 +129,7 @@ class _$WeatherEventStartedImpl implements _WeatherEventStarted {
     required TResult Function() started,
     required TResult Function(double lat, double long) fetchWithCords,
     required TResult Function(double lat, double long) getForecastData,
+    required TResult Function() getCachedData,
   }) {
     return started();
   }
@@ -133,6 +140,7 @@ class _$WeatherEventStartedImpl implements _WeatherEventStarted {
     TResult? Function()? started,
     TResult? Function(double lat, double long)? fetchWithCords,
     TResult? Function(double lat, double long)? getForecastData,
+    TResult? Function()? getCachedData,
   }) {
     return started?.call();
   }
@@ -143,6 +151,7 @@ class _$WeatherEventStartedImpl implements _WeatherEventStarted {
     TResult Function()? started,
     TResult Function(double lat, double long)? fetchWithCords,
     TResult Function(double lat, double long)? getForecastData,
+    TResult Function()? getCachedData,
     required TResult orElse(),
   }) {
     if (started != null) {
@@ -158,6 +167,7 @@ class _$WeatherEventStartedImpl implements _WeatherEventStarted {
     required TResult Function(_WeatherEventFetchWithCord value) fetchWithCords,
     required TResult Function(_WeatherEventGetForecastData value)
         getForecastData,
+    required TResult Function(_WeatherEventGetCachedData value) getCachedData,
   }) {
     return started(this);
   }
@@ -168,6 +178,7 @@ class _$WeatherEventStartedImpl implements _WeatherEventStarted {
     TResult? Function(_WeatherEventStarted value)? started,
     TResult? Function(_WeatherEventFetchWithCord value)? fetchWithCords,
     TResult? Function(_WeatherEventGetForecastData value)? getForecastData,
+    TResult? Function(_WeatherEventGetCachedData value)? getCachedData,
   }) {
     return started?.call(this);
   }
@@ -178,6 +189,7 @@ class _$WeatherEventStartedImpl implements _WeatherEventStarted {
     TResult Function(_WeatherEventStarted value)? started,
     TResult Function(_WeatherEventFetchWithCord value)? fetchWithCords,
     TResult Function(_WeatherEventGetForecastData value)? getForecastData,
+    TResult Function(_WeatherEventGetCachedData value)? getCachedData,
     required TResult orElse(),
   }) {
     if (started != null) {
@@ -270,6 +282,7 @@ class _$WeatherEventFetchWithCordImpl implements _WeatherEventFetchWithCord {
     required TResult Function() started,
     required TResult Function(double lat, double long) fetchWithCords,
     required TResult Function(double lat, double long) getForecastData,
+    required TResult Function() getCachedData,
   }) {
     return fetchWithCords(lat, long);
   }
@@ -280,6 +293,7 @@ class _$WeatherEventFetchWithCordImpl implements _WeatherEventFetchWithCord {
     TResult? Function()? started,
     TResult? Function(double lat, double long)? fetchWithCords,
     TResult? Function(double lat, double long)? getForecastData,
+    TResult? Function()? getCachedData,
   }) {
     return fetchWithCords?.call(lat, long);
   }
@@ -290,6 +304,7 @@ class _$WeatherEventFetchWithCordImpl implements _WeatherEventFetchWithCord {
     TResult Function()? started,
     TResult Function(double lat, double long)? fetchWithCords,
     TResult Function(double lat, double long)? getForecastData,
+    TResult Function()? getCachedData,
     required TResult orElse(),
   }) {
     if (fetchWithCords != null) {
@@ -305,6 +320,7 @@ class _$WeatherEventFetchWithCordImpl implements _WeatherEventFetchWithCord {
     required TResult Function(_WeatherEventFetchWithCord value) fetchWithCords,
     required TResult Function(_WeatherEventGetForecastData value)
         getForecastData,
+    required TResult Function(_WeatherEventGetCachedData value) getCachedData,
   }) {
     return fetchWithCords(this);
   }
@@ -315,6 +331,7 @@ class _$WeatherEventFetchWithCordImpl implements _WeatherEventFetchWithCord {
     TResult? Function(_WeatherEventStarted value)? started,
     TResult? Function(_WeatherEventFetchWithCord value)? fetchWithCords,
     TResult? Function(_WeatherEventGetForecastData value)? getForecastData,
+    TResult? Function(_WeatherEventGetCachedData value)? getCachedData,
   }) {
     return fetchWithCords?.call(this);
   }
@@ -325,6 +342,7 @@ class _$WeatherEventFetchWithCordImpl implements _WeatherEventFetchWithCord {
     TResult Function(_WeatherEventStarted value)? started,
     TResult Function(_WeatherEventFetchWithCord value)? fetchWithCords,
     TResult Function(_WeatherEventGetForecastData value)? getForecastData,
+    TResult Function(_WeatherEventGetCachedData value)? getCachedData,
     required TResult orElse(),
   }) {
     if (fetchWithCords != null) {
@@ -426,6 +444,7 @@ class _$WeatherEventGetForecastDataImpl
     required TResult Function() started,
     required TResult Function(double lat, double long) fetchWithCords,
     required TResult Function(double lat, double long) getForecastData,
+    required TResult Function() getCachedData,
   }) {
     return getForecastData(lat, long);
   }
@@ -436,6 +455,7 @@ class _$WeatherEventGetForecastDataImpl
     TResult? Function()? started,
     TResult? Function(double lat, double long)? fetchWithCords,
     TResult? Function(double lat, double long)? getForecastData,
+    TResult? Function()? getCachedData,
   }) {
     return getForecastData?.call(lat, long);
   }
@@ -446,6 +466,7 @@ class _$WeatherEventGetForecastDataImpl
     TResult Function()? started,
     TResult Function(double lat, double long)? fetchWithCords,
     TResult Function(double lat, double long)? getForecastData,
+    TResult Function()? getCachedData,
     required TResult orElse(),
   }) {
     if (getForecastData != null) {
@@ -461,6 +482,7 @@ class _$WeatherEventGetForecastDataImpl
     required TResult Function(_WeatherEventFetchWithCord value) fetchWithCords,
     required TResult Function(_WeatherEventGetForecastData value)
         getForecastData,
+    required TResult Function(_WeatherEventGetCachedData value) getCachedData,
   }) {
     return getForecastData(this);
   }
@@ -471,6 +493,7 @@ class _$WeatherEventGetForecastDataImpl
     TResult? Function(_WeatherEventStarted value)? started,
     TResult? Function(_WeatherEventFetchWithCord value)? fetchWithCords,
     TResult? Function(_WeatherEventGetForecastData value)? getForecastData,
+    TResult? Function(_WeatherEventGetCachedData value)? getCachedData,
   }) {
     return getForecastData?.call(this);
   }
@@ -481,6 +504,7 @@ class _$WeatherEventGetForecastDataImpl
     TResult Function(_WeatherEventStarted value)? started,
     TResult Function(_WeatherEventFetchWithCord value)? fetchWithCords,
     TResult Function(_WeatherEventGetForecastData value)? getForecastData,
+    TResult Function(_WeatherEventGetCachedData value)? getCachedData,
     required TResult orElse(),
   }) {
     if (getForecastData != null) {
@@ -503,29 +527,147 @@ abstract class _WeatherEventGetForecastData implements WeatherEvent {
 }
 
 /// @nodoc
+abstract class _$$WeatherEventGetCachedDataImplCopyWith<$Res> {
+  factory _$$WeatherEventGetCachedDataImplCopyWith(
+          _$WeatherEventGetCachedDataImpl value,
+          $Res Function(_$WeatherEventGetCachedDataImpl) then) =
+      __$$WeatherEventGetCachedDataImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$WeatherEventGetCachedDataImplCopyWithImpl<$Res>
+    extends _$WeatherEventCopyWithImpl<$Res, _$WeatherEventGetCachedDataImpl>
+    implements _$$WeatherEventGetCachedDataImplCopyWith<$Res> {
+  __$$WeatherEventGetCachedDataImplCopyWithImpl(
+      _$WeatherEventGetCachedDataImpl _value,
+      $Res Function(_$WeatherEventGetCachedDataImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$WeatherEventGetCachedDataImpl implements _WeatherEventGetCachedData {
+  const _$WeatherEventGetCachedDataImpl();
+
+  @override
+  String toString() {
+    return 'WeatherEvent.getCachedData()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$WeatherEventGetCachedDataImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() started,
+    required TResult Function(double lat, double long) fetchWithCords,
+    required TResult Function(double lat, double long) getForecastData,
+    required TResult Function() getCachedData,
+  }) {
+    return getCachedData();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? started,
+    TResult? Function(double lat, double long)? fetchWithCords,
+    TResult? Function(double lat, double long)? getForecastData,
+    TResult? Function()? getCachedData,
+  }) {
+    return getCachedData?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? started,
+    TResult Function(double lat, double long)? fetchWithCords,
+    TResult Function(double lat, double long)? getForecastData,
+    TResult Function()? getCachedData,
+    required TResult orElse(),
+  }) {
+    if (getCachedData != null) {
+      return getCachedData();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_WeatherEventStarted value) started,
+    required TResult Function(_WeatherEventFetchWithCord value) fetchWithCords,
+    required TResult Function(_WeatherEventGetForecastData value)
+        getForecastData,
+    required TResult Function(_WeatherEventGetCachedData value) getCachedData,
+  }) {
+    return getCachedData(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_WeatherEventStarted value)? started,
+    TResult? Function(_WeatherEventFetchWithCord value)? fetchWithCords,
+    TResult? Function(_WeatherEventGetForecastData value)? getForecastData,
+    TResult? Function(_WeatherEventGetCachedData value)? getCachedData,
+  }) {
+    return getCachedData?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_WeatherEventStarted value)? started,
+    TResult Function(_WeatherEventFetchWithCord value)? fetchWithCords,
+    TResult Function(_WeatherEventGetForecastData value)? getForecastData,
+    TResult Function(_WeatherEventGetCachedData value)? getCachedData,
+    required TResult orElse(),
+  }) {
+    if (getCachedData != null) {
+      return getCachedData(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _WeatherEventGetCachedData implements WeatherEvent {
+  const factory _WeatherEventGetCachedData() = _$WeatherEventGetCachedDataImpl;
+}
+
+/// @nodoc
 mixin _$WeatherState {
-  SingleWhetherModal? get whetherModal => throw _privateConstructorUsedError;
+  SingleWeatherData? get whetherModal => throw _privateConstructorUsedError;
   bool get isLoading => throw _privateConstructorUsedError;
   bool get hasError => throw _privateConstructorUsedError;
   List<DayWeatherData> get forecast => throw _privateConstructorUsedError;
   String? get errorMessage => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(SingleWhetherModal? whetherModal, bool isLoading,
+    required TResult Function(SingleWeatherData? whetherModal, bool isLoading,
             bool hasError, List<DayWeatherData> forecast, String? errorMessage)
         initial,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(SingleWhetherModal? whetherModal, bool isLoading,
+    TResult? Function(SingleWeatherData? whetherModal, bool isLoading,
             bool hasError, List<DayWeatherData> forecast, String? errorMessage)?
         initial,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(SingleWhetherModal? whetherModal, bool isLoading,
+    TResult Function(SingleWeatherData? whetherModal, bool isLoading,
             bool hasError, List<DayWeatherData> forecast, String? errorMessage)?
         initial,
     required TResult orElse(),
@@ -560,7 +702,7 @@ abstract class $WeatherStateCopyWith<$Res> {
       _$WeatherStateCopyWithImpl<$Res, WeatherState>;
   @useResult
   $Res call(
-      {SingleWhetherModal? whetherModal,
+      {SingleWeatherData? whetherModal,
       bool isLoading,
       bool hasError,
       List<DayWeatherData> forecast,
@@ -590,7 +732,7 @@ class _$WeatherStateCopyWithImpl<$Res, $Val extends WeatherState>
       whetherModal: freezed == whetherModal
           ? _value.whetherModal
           : whetherModal // ignore: cast_nullable_to_non_nullable
-              as SingleWhetherModal?,
+              as SingleWeatherData?,
       isLoading: null == isLoading
           ? _value.isLoading
           : isLoading // ignore: cast_nullable_to_non_nullable
@@ -620,7 +762,7 @@ abstract class _$$InitialImplCopyWith<$Res>
   @override
   @useResult
   $Res call(
-      {SingleWhetherModal? whetherModal,
+      {SingleWeatherData? whetherModal,
       bool isLoading,
       bool hasError,
       List<DayWeatherData> forecast,
@@ -648,7 +790,7 @@ class __$$InitialImplCopyWithImpl<$Res>
       whetherModal: freezed == whetherModal
           ? _value.whetherModal
           : whetherModal // ignore: cast_nullable_to_non_nullable
-              as SingleWhetherModal?,
+              as SingleWeatherData?,
       isLoading: null == isLoading
           ? _value.isLoading
           : isLoading // ignore: cast_nullable_to_non_nullable
@@ -681,7 +823,7 @@ class _$InitialImpl implements _Initial {
       : _forecast = forecast;
 
   @override
-  final SingleWhetherModal? whetherModal;
+  final SingleWeatherData? whetherModal;
   @override
   final bool isLoading;
   @override
@@ -731,7 +873,7 @@ class _$InitialImpl implements _Initial {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(SingleWhetherModal? whetherModal, bool isLoading,
+    required TResult Function(SingleWeatherData? whetherModal, bool isLoading,
             bool hasError, List<DayWeatherData> forecast, String? errorMessage)
         initial,
   }) {
@@ -741,7 +883,7 @@ class _$InitialImpl implements _Initial {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(SingleWhetherModal? whetherModal, bool isLoading,
+    TResult? Function(SingleWeatherData? whetherModal, bool isLoading,
             bool hasError, List<DayWeatherData> forecast, String? errorMessage)?
         initial,
   }) {
@@ -752,7 +894,7 @@ class _$InitialImpl implements _Initial {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(SingleWhetherModal? whetherModal, bool isLoading,
+    TResult Function(SingleWeatherData? whetherModal, bool isLoading,
             bool hasError, List<DayWeatherData> forecast, String? errorMessage)?
         initial,
     required TResult orElse(),
@@ -794,14 +936,14 @@ class _$InitialImpl implements _Initial {
 
 abstract class _Initial implements WeatherState {
   const factory _Initial(
-      {final SingleWhetherModal? whetherModal,
+      {final SingleWeatherData? whetherModal,
       required final bool isLoading,
       required final bool hasError,
       required final List<DayWeatherData> forecast,
       final String? errorMessage}) = _$InitialImpl;
 
   @override
-  SingleWhetherModal? get whetherModal;
+  SingleWeatherData? get whetherModal;
   @override
   bool get isLoading;
   @override

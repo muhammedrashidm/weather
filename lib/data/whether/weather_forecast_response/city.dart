@@ -1,7 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
 import 'package:whether/data/whether/single_wether_response/coord.dart';
 
-
 part 'city.g.dart';
 
 @JsonSerializable()
@@ -26,6 +25,6 @@ class CityResponse {
     this.sunset,
   });
 
-  factory CityResponse.fromJson(Map<String, dynamic> json) => _$CityResponseFromJson(json);
-
+  factory CityResponse.fromJson(Map<String, dynamic> json) =>
+      _$CityResponseFromJson(json);
 }

@@ -38,6 +38,6 @@ class WeatherForecastItemResponse {
     this.dtTxt,
   });
 
-  factory WeatherForecastItemResponse.fromJson(Map<String, dynamic> json) => _$WeatherForecastItemResponseFromJson(json);
-
+  factory WeatherForecastItemResponse.fromJson(Map<String, dynamic> json) =>
+      _$WeatherForecastItemResponseFromJson(json);
 }

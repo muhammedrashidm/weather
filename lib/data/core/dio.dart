@@ -15,9 +15,9 @@ class DioManager {
 
   Dio dio = Dio(BaseOptions(
     baseUrl: "https://api.openweathermap.org",
-    sendTimeout: Duration(minutes: 1),
-    connectTimeout: Duration(minutes: 1),
-    receiveTimeout: Duration(minutes: 1),
+    sendTimeout: Duration(seconds: 30),
+    connectTimeout: Duration(seconds: 30),
+    receiveTimeout: Duration(seconds: 30),
   ));
 
   Future<Response> get(String url,

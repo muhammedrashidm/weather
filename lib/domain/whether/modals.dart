@@ -205,7 +205,6 @@ class SysForecast {
   SysForecast({
     required this.pod,
   });
-
 }
 
 class ForecastMain {
@@ -230,5 +229,4 @@ class ForecastMain {
     required this.humidity,
     required this.tempKf,
   });
-
 }

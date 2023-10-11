@@ -7,7 +7,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:lottie/lottie.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:whether/app/bloc/weather_bloc.dart';
+import 'package:whether/app/weather-bloc/weather_bloc.dart';
 import 'package:whether/presentation/const/assets.dart';
 import 'package:whether/presentation/home/home.dart';
 
@@ -53,8 +53,11 @@ class _ScreenSplashState extends State<ScreenSplash> with AfterLayoutMixin {
 
       BlocProvider.of<WeatherBloc>(context)
           .add(WeatherEvent.fetchWithCords(lat: latitude, long: longitude));
+      BlocProvider.of<WeatherBloc>(context)
+          .add(WeatherEvent.getForecastData(lat: latitude, long: longitude));
     } catch (e) {
-      // Handle any errors that occur during location retrieval.
+      BlocProvider.of<WeatherBloc>(context)
+          .add(const WeatherEvent.getCachedData());
     }
   }
 

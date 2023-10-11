@@ -8,6 +8,6 @@ class SysForecastResponse {
 
   SysForecastResponse({this.pod});
 
-  factory SysForecastResponse.fromJson(Map<String, dynamic> json) => _$SysForecastResponseFromJson(json);
-
+  factory SysForecastResponse.fromJson(Map<String, dynamic> json) =>
+      _$SysForecastResponseFromJson(json);
 }

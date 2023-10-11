@@ -1,3 +1,4 @@
+import 'package:whether/data/search/search_response/search_response.dart';
 import 'package:whether/data/whether/single_wether_response/clouds.dart';
 import 'package:whether/data/whether/single_wether_response/coord.dart';
 import 'package:whether/data/whether/single_wether_response/main.dart';
@@ -9,6 +10,7 @@ import 'package:whether/data/whether/weather_forecast_response/city.dart';
 import 'package:whether/data/whether/weather_forecast_response/list.dart';
 import 'package:whether/data/whether/weather_forecast_response/main.dart';
 import 'package:whether/data/whether/weather_forecast_response/weather_forecast_response.dart';
+import 'package:whether/domain/search/modals.dart';
 import 'package:whether/domain/whether/modals.dart';
 
 extension SingleWetherResponseToDomain on SingleWetherResponse? {
@@ -87,20 +89,29 @@ extension WeatherFOrecastToModal on WeatherForecastResponse? {
         message: this?.message ?? 0,
         cnt: this?.cnt ?? 0,
         list: this?.list?.map((e) => e.toDomain()).toList() ?? [],
-        city: this?.city.toDomain() ?? CityModal(id: 0, name: '', coord: CoordModal.empty(), country: '', population: 0, timezone: 0, sunrise: 0, sunset: 0));
+        city: this?.city.toDomain() ??
+            CityModal(
+                id: 0,
+                name: '',
+                coord: CoordModal.empty(),
+                country: '',
+                population: 0,
+                timezone: 0,
+                sunrise: 0,
+                sunset: 0));
   }
 }
 
 extension CityToModal on CityResponse? {
   CityModal toDomain() => CityModal(
-      id: this?.id ??0,
-      name: this?.name ??'',
-      coord:this?. coord.toDomain() ??CoordModal.empty(),
-      country:this?. country ?? '',
-      population:this?. population?? 0,
-      timezone: this?.timezone?? 0,
-      sunrise: this?.sunrise?? 0,
-      sunset: this?.sunset?? 0);
+      id: this?.id ?? 0,
+      name: this?.name ?? '',
+      coord: this?.coord.toDomain() ?? CoordModal.empty(),
+      country: this?.country ?? '',
+      population: this?.population ?? 0,
+      timezone: this?.timezone ?? 0,
+      sunrise: this?.sunrise ?? 0,
+      sunset: this?.sunset ?? 0);
 }
 
 extension WeatherForecastItemResponseToModal on WeatherForecastItemResponse? {
@@ -142,4 +153,16 @@ extension ForecastMainToModal on ForecastMainResponse? {
       seaLevel: this?.seaLevel ?? 0,
       grndLevel: this?.grndLevel ?? 0,
       tempKf: this?.tempKf ?? 0);
+}
+
+extension SearchRepToModal on SearchResponse? {
+  SearchResultModal toDomain() {
+    return SearchResultModal(
+      localNames: this?.localNames,
+        name: this?.name ?? '',
+        lat: this?.lat ?? 0,
+        lon: this?.lon ?? 0,
+        country: this?.country ?? '',
+        state: this?.state ?? '');
+  }
 }

@@ -4,10 +4,10 @@ part 'rain.g.dart';
 
 @JsonSerializable()
 class RainResponse {
-	double? h;
+  double? h;
 
-	RainResponse({this.h});
+  RainResponse({this.h});
 
-	factory RainResponse.fromJson(Map<String, dynamic> json) => _$RainResponseFromJson(json);
-
+  factory RainResponse.fromJson(Map<String, dynamic> json) =>
+      _$RainResponseFromJson(json);
 }

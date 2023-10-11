@@ -8,10 +8,9 @@ class WeatherEvent with _$WeatherEvent {
     required double long,
   }) = _WeatherEventFetchWithCord;
 
-  const factory WeatherEvent.getForecastData(
-  {
+  const factory WeatherEvent.getForecastData({
     required double lat,
     required double long,
-}
-      ) = _WeatherEventGetForecastData;
+  }) = _WeatherEventGetForecastData;
+  const factory WeatherEvent.getCachedData() = _WeatherEventGetCachedData;
 }
