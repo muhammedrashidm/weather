@@ -1,16 +1,13 @@
 # whether
 
-A new Flutter project.
+ A flutter app powered by open weather api
 
-## Getting Started
+## Running the project
 
-This project is a starting point for a Flutter application.
+### APK
+  
+   An apk is built and ready to run, is saved in the root/APK directory of this repo, you can download it, install to  your phone and run ti
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Project
+  
+   Download the project and open in any flutter supported IDE, run flutter pub get and flutter pub run. keep an emulator or simulator opened since it's developed only for mobile devices.
